@@ -297,12 +297,9 @@ for (i in 1:3) {
 # -------------------------------------------------------------------
 # Q3.3. 2SLS estimation
 # -------------------------------------------------------------------
-if (!requireNamespace("AER", quietly = TRUE)) install.packages("AER")
-
-library(AER)
 
 
-# Same beta values
+# Define the coefficients for the wage equation
 beta0 <- 5.5
 beta1 <- 0.08
 beta2 <- 0.2
