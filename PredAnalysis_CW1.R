@@ -84,7 +84,7 @@ ggplot(data_long, aes(x = value)) +
   labs(title = "Histograms of Continuous Variables", x = "Value", y = "Count") +
   theme_minimal() +
   theme(
-    panel.background = element_rect(fill = "gray90", color = NA)  # gray background for each facet
+    panel.background = element_rect(fill = "gray90", color = NA) 
   )
 
 
@@ -351,7 +351,7 @@ results_2sls <- replicate(n_sims, {
 
 
 results_ols <- replicate(n_sims, {
-  data_ols <- sim_data_iv(n)     # generate the same structure
+  data_ols <- sim_data_iv(n)     
   ols <- lm(lwage ~ educ + exper, data = data_ols)
   coef(ols)
 })
