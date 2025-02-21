@@ -263,7 +263,7 @@ means_ols <- rowMeans(results)
 variances_ols <- apply(results, 1, var)
 
 
-true_values <- c(beta0, beta2, beta1)  # match your data generation
+true_values <- c(beta0, beta2, beta1)
 coef_names <- c("Intercept", "Education", "Experience")
 
 
